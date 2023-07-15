@@ -1,0 +1,29 @@
+// Developing a Calculator to perform an arithmetic operation between to numbers
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num1,num2;
+    char op;
+    cout<<"Enter First Number : ";
+    cin>>num1;
+    cout<<"Enter Second Number : ";
+    cin>>num2;
+    cout<<"Enter Operation to be performed out of '+' or '-' or '*' or '/' : ";
+    cin>>op;
+    switch(op){
+        case '+': 
+            cout<<num1+num2;
+            break;
+        case '-': 
+            cout<<num1-num2;
+            break;
+        case '*': 
+            cout<<num1*num2;
+            break;
+        case '/': 
+            cout<<num1/num2;
+            break;
+    }
+    return 0;
+}
